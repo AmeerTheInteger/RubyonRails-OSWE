@@ -1,0 +1,47 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary"> 
+
+	<%=link_to "Connecting People", root_path, class:"navbar-brand"%>
+ 
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+
+      
+
+      <li class="nav-item">
+		  <%=link_to "About Us", home_about_path, class:"nav-link"%>
+      </li>
+
+        <% if signed_in?(:user) %>
+	     <li class="nav-item">
+       <%=link_to "Connections", users_path,class:"nav-link"%>
+      </li>
+   
+     <li class="nav-item">
+		  <%= link_to 'Add Connection', new_user_path, class:"nav-link"%>
+      </li>
+
+        <li class="nav-item">
+          <%=link_to "Sign Out",  destroy_auth_user_session_path, method: :delete  , class:"nav-link"%>
+        </li>
+      
+      <% else %>
+       <li class="nav-item">
+            <%=link_to 'Sign In',  new_auth_user_session_path , class:"nav-link"%>
+           </li>
+
+          <li class="nav-item">
+          <%=link_to 'Sign Up',  new_auth_user_registration_path, class:"nav-link"%>
+        </li>
+        <% end %>
+        
+
+
+           
+        
+
+  </div>
+</nav>
