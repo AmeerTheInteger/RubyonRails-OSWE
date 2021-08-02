@@ -1,4 +1,4 @@
 # README
 
-Connecting People is a Socail Network website constructed for the purpose of sorce code auditing. Feel free to practice your Adavence Web App Exploits.
+Connecting People is a Social Network website constructed for the purpose of source code auditing. Feel free to practice your Advance Web App Exploits.
 
