@@ -1,24 +1,11 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Connecting People is a Socail Network website constructed for the purpose of sorce code auditing. Feel free to practice your Adavence Web App Exploits.
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby -version
+  ruby 3.0.2p107 
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Rails -version 
+  Rails 6.1.4
